@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DeliveryListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Deiliveries"
+        view.backgroundColor = .white
     }
 
 

@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		101BC6D2228487170030EB27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC6D1228487170030EB27 /* AppDelegate.swift */; };
-		101BC6D4228487170030EB27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC6D3228487170030EB27 /* ViewController.swift */; };
-		101BC6D7228487170030EB27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101BC6D5228487170030EB27 /* Main.storyboard */; };
+		101BC6D4228487170030EB27 /* DeliveryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC6D3228487170030EB27 /* DeliveryListViewController.swift */; };
 		101BC6D92284871A0030EB27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101BC6D82284871A0030EB27 /* Assets.xcassets */; };
 		101BC6DC2284871A0030EB27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101BC6DA2284871A0030EB27 /* LaunchScreen.storyboard */; };
 		101BC6E72284871A0030EB27 /* iDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC6E62284871A0030EB27 /* iDeliveryTests.swift */; };
@@ -36,8 +35,7 @@
 /* Begin PBXFileReference section */
 		101BC6CE228487170030EB27 /* iDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101BC6D1228487170030EB27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		101BC6D3228487170030EB27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		101BC6D6228487170030EB27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		101BC6D3228487170030EB27 /* DeliveryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListViewController.swift; sourceTree = "<group>"; };
 		101BC6D82284871A0030EB27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		101BC6DB2284871A0030EB27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		101BC6DD2284871A0030EB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,8 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				101BC6D1228487170030EB27 /* AppDelegate.swift */,
-				101BC6D3228487170030EB27 /* ViewController.swift */,
-				101BC6D5228487170030EB27 /* Main.storyboard */,
+				101BC6D3228487170030EB27 /* DeliveryListViewController.swift */,
 				101BC6D82284871A0030EB27 /* Assets.xcassets */,
 				101BC6DA2284871A0030EB27 /* LaunchScreen.storyboard */,
 				101BC6DD2284871A0030EB27 /* Info.plist */,
@@ -231,7 +228,6 @@
 			files = (
 				101BC6DC2284871A0030EB27 /* LaunchScreen.storyboard in Resources */,
 				101BC6D92284871A0030EB27 /* Assets.xcassets in Resources */,
-				101BC6D7228487170030EB27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				101BC6D4228487170030EB27 /* ViewController.swift in Sources */,
+				101BC6D4228487170030EB27 /* DeliveryListViewController.swift in Sources */,
 				101BC6D2228487170030EB27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		101BC6D5228487170030EB27 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				101BC6D6228487170030EB27 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		101BC6DA2284871A0030EB27 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.iDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.iDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
