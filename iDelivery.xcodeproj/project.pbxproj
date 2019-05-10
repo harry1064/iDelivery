@@ -14,6 +14,8 @@
 		101BC6E72284871A0030EB27 /* iDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC6E62284871A0030EB27 /* iDeliveryTests.swift */; };
 		101BC6F22284871A0030EB27 /* iDeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC6F12284871A0030EB27 /* iDeliveryUITests.swift */; };
 		101BC70122848F5E0030EB27 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC70022848F5E0030EB27 /* Extensions.swift */; };
+		101BC7F72285B6AA0030EB27 /* DeliveryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC7F62285B6AA0030EB27 /* DeliveryModel.swift */; };
+		101BC7FA2285C1070030EB27 /* DeliveryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BC7F92285C1070030EB27 /* DeliveryListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		101BC6F12284871A0030EB27 /* iDeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDeliveryUITests.swift; sourceTree = "<group>"; };
 		101BC6F32284871A0030EB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101BC70022848F5E0030EB27 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		101BC7F62285B6AA0030EB27 /* DeliveryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryModel.swift; sourceTree = "<group>"; };
+		101BC7F92285C1070030EB27 /* DeliveryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		101BC6D0228487170030EB27 /* iDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				101BC7F82285C0D10030EB27 /* Views */,
+				101BC7F52285B6640030EB27 /* Models */,
 				101BC6FF22848F430030EB27 /* Extensions */,
 				101BC6D1228487170030EB27 /* AppDelegate.swift */,
 				101BC7F42285B6270030EB27 /* DeliveryListViewController */,
@@ -139,6 +145,22 @@
 				101BC6D3228487170030EB27 /* DeliveryListViewController.swift */,
 			);
 			path = DeliveryListViewController;
+			sourceTree = "<group>";
+		};
+		101BC7F52285B6640030EB27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				101BC7F62285B6AA0030EB27 /* DeliveryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		101BC7F82285C0D10030EB27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				101BC7F92285C1070030EB27 /* DeliveryListTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				101BC6D4228487170030EB27 /* DeliveryListViewController.swift in Sources */,
+				101BC7FA2285C1070030EB27 /* DeliveryListTableViewCell.swift in Sources */,
 				101BC70122848F5E0030EB27 /* Extensions.swift in Sources */,
 				101BC6D2228487170030EB27 /* AppDelegate.swift in Sources */,
+				101BC7F72285B6AA0030EB27 /* DeliveryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
