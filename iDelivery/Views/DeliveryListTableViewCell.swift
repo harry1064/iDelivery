@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class DeliveryListTableViewCell: UITableViewCell {
 
@@ -25,7 +26,7 @@ class DeliveryListTableViewCell: UITableViewCell {
     private let deliveryImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.setBaseViewConfiguration()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         return imageView;
     }()
 
@@ -39,8 +40,9 @@ class DeliveryListTableViewCell: UITableViewCell {
         setupUI()
     }
 
+    private let placeholderImage = UIImage(named: "delivery-van-default")
+
     private func setupUI() {
-        deliveryImageView.image = UIImage(named: "delivery-van-default")
         deliveryImageView.layer.cornerRadius = CGFloat(deliveryImageViewHeight / 2.0)
         accessoryType = .disclosureIndicator
         selectionStyle = .none
@@ -55,6 +57,12 @@ class DeliveryListTableViewCell: UITableViewCell {
 
     func configure(withModel model:DeliveryModel) {
         descriptionLabel.text = model.description
+        if let url = URL(string: model.imageUrl) {
+            deliveryImageView.af_setImage(withURL: url, placeholderImage: placeholderImage)
+        } else {
+            deliveryImageView.image = placeholderImage
+        }
+
     }
 
 }

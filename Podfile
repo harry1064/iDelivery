@@ -7,6 +7,8 @@ target 'iDelivery' do
 
   # Pods for iDelivery
   pod 'Alamofire'
+  pod 'AlamofireImage'
+  
   target 'iDeliveryTests' do
     inherit! :search_paths
     # Pods for testing
