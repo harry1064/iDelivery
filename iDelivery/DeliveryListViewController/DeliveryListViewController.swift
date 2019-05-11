@@ -139,6 +139,13 @@ extension DeliveryListViewController: UITableViewDataSource, UITableViewDelegate
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = deliveries[indexPath.row]
+        let vc = DeliveryDetailViewController()
+        vc.deliveryModel = model
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // 50 is added so user have to scroll a little bit to initiate the next fetching batch
