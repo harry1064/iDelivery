@@ -43,6 +43,7 @@ class DeliveryListTableViewCell: UITableViewCell {
         deliveryImageView.image = UIImage(named: "delivery-van-default")
         deliveryImageView.layer.cornerRadius = CGFloat(deliveryImageViewHeight / 2.0)
         accessoryType = .disclosureIndicator
+        selectionStyle = .none
         contentView.addSubview(deliveryImageView)
         contentView.addSubview(descriptionLabel)
 
