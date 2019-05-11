@@ -15,8 +15,18 @@ class NetworkManager: NSObject {
 
     static let sharedManager = NetworkManager()
 
+    private let networkReachabilityManager = NetworkReachabilityManager()
+
+    var isReachable: Bool {
+        return networkReachabilityManager?.isReachable ?? false
+    }
+
     func getDeliverlies(offset: Int, limit: Int, completionHandler: @escaping (_ deliveries: [DeliveryModel]?, _ error: Error?) -> Void) {
-        Alamofire.request("\(baseUrl)/deliveries?offset=\(offset)&limit=\(limit)").responseData{
+        var req = URLRequest(url: URL(string: "\(baseUrl)/deliveries?offset=\(offset)&limit=\(limit)")!)
+        if !isReachable {
+            req.cachePolicy = .returnCacheDataDontLoad
+        }
+        Alamofire.request(req).responseData{
             responseData in
             if let error = responseData.error {
                 completionHandler(nil, error)
